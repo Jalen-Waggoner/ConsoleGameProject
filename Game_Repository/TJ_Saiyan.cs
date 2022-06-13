@@ -4,25 +4,19 @@
 
 public class TJ : LivingCreature
 {
-    public TJ()
+    public TJ() : base()
     {
 
     }
-    public TJ(string Name, int Level, int HP)
+    public TJ(string Name, int Level, int HP) : base ( maxHP, currentHP)
     {
         this.Name = Name;
         this.Level = Level;
-        this.HP = HP;
         this.Weapon = Weapon;
-
-
-
     }
     public string Name {get; set; }
     
     public int Level {get; set; }
-
-    public int HP {get; set; }
 
     public Weapon Weapon {get; set; }
     public int WeaponDMG {get {
